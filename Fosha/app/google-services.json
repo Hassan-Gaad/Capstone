@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1014732340468",
+    "firebase_url": "https://fosha-a75de.firebaseio.com",
+    "project_id": "fosha-a75de",
+    "storage_bucket": "fosha-a75de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014732340468:android:77f21553ac764abd",
+        "android_client_info": {
+          "package_name": "com.example.fosha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1014732340468-unukng8cuk8hcq8m259ut6aed954oild.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fosha",
+            "certificate_hash": "c6ebb7fb6ccb061a5b023dcf43ba2d99c148ec31"
+          }
+        },
+        {
+          "client_id": "1014732340468-3rf4bv1gkth8ucs4p0eit0blschivnqo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBhavaDfZK9a7OCp894EQa9ERQKIIbbWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1014732340468-3rf4bv1gkth8ucs4p0eit0blschivnqo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

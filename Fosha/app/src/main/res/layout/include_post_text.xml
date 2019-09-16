@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/postTitle"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/merienda_bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:lines="2"
+        android:maxLines="3"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:text="Bazooka Fried Chicken Egypt" />
+
+    <TextView
+        android:id="@+id/postBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/tajawal_regular"
+        android:gravity="start"
+        android:textSize="16sp"
+        android:overScrollMode="always"
+        android:maxLines="10"
+        android:paddingBottom="2dp"
+        android:lineSpacingExtra="5dp"
+        tools:text="@string/lorem" />
+
+    <TextView
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/extra"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp"
+        />
+
+</LinearLayout>

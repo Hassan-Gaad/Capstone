@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corner_txtviews"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+
+    <RelativeLayout
+
+        android:id="@+id/rlWidgetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:focusable="true"
+        >
+
+        <include
+            android:id="@+id/postAuthorLayout"
+            layout="@layout/include_post_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:id="@+id/widgetAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/address"
+            android:layout_marginTop="@dimen/margin_1"
+            android:layout_below="@id/postAuthorLayout"
+
+            />
+        <TextView
+            android:id="@+id/postNumStars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            style="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_marginEnd="2dp"
+            android:drawableStart="@drawable/ic_toggle_star_24"
+            android:drawablePadding="@dimen/margin_1"
+            android:gravity="center"
+            tools:text="7" />
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/widgetAddress"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            tools:text="Title"
+            android:gravity="center_horizontal"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textSize="16sp"
+            android:fontFamily="@font/merienda_bold"
+            android:maxLines="2"
+
+            />
+        <TextView
+            android:id="@+id/Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Title"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/tajawal_regular"
+            android:gravity="start"
+            android:lineSpacingExtra="5dp"
+            android:maxLines="4"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:overScrollMode="always"
+            android:paddingBottom="2dp"
+            android:text="@string/lorem"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

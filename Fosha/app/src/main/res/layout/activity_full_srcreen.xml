@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navigationBarColor"
+    android:orientation="vertical"
+    tools:context=".fullSrcreenActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_fullScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_scrollFlags="enterAlwaysCollapsed"
+        android:theme="@style/AppTheme">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/fullScreenToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ImageView
+        android:id="@+id/image_full_screen"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:maxHeight="600dp"
+        android:scaleType="fitCenter"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+    <ImageView
+        android:id="@+id/imageView_next"
+        android:layout_width="83dp"
+        android:layout_height="38dp"
+        android:layout_gravity="bottom|right"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/ef_ic_arrow_forward"
+        android:nextFocusLeft="@id/imageView_back"
+        android:nextClusterForward="@id/imageView_back"
+        android:onClick="btnNext"/>
+
+    <ImageView
+        android:id="@+id/imageView_back"
+        android:layout_width="83dp"
+        android:layout_height="38dp"
+        android:nextFocusForward="@id/imageView_next"
+        android:contentDescription="@string/next"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|left"
+        app:srcCompat="@drawable/ef_ic_arrow_back"
+        android:nextFocusRight="@id/imageView_next"
+        android:onClick="btnBack"/>
+
+    <ProgressBar
+        android:id="@+id/full_screenProgressBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
